@@ -1,20 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,r,s=0,p=1;
+    int n,sum=0,pro=1,rem;
     scanf("%d",&n);
-    while(n)
+    while(n>0)
     {
-        r=n%10;
-        s=s+r;
-        p=p*r;
+        rem=n%10;
+        sum=sum+rem;
+        pro=pro*rem;
         n=n/10;
     }
-    if(s==p)
+    if(sum==pro)
     {
-        
         printf("Spy Number");
-        
     }
     else
     {
